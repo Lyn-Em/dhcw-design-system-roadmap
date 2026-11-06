@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  color: #212b32;
+  color: #1a365d;
   background: #ffffff;
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 18px;
@@ -25,32 +25,34 @@ body {
 /* Header */
 
 .site-header {
-  background: #1d3a61;
+  background-color: #1a365d;
+  padding: 24px 0;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  gap: 32px;
 }
 
 .brand {
   display: block;
+  flex-shrink: 0;
 }
 
 .brand img {
   display: block;
-  width: 250px;
-  max-width: 100%;
+  width: 330px;
   height: auto;
 }
 
-
 .service-name {
+  margin: 0;
+  padding-left: 32px;
+  border-left: 1px solid #ffffff;
+
   color: #ffffff;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.2;
   font-weight: 400;
 }
