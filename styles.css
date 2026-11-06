@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #212b32;
+  background: #ffffff;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Header */
+
+.site-header {
+  background: #1a365d;
+  color: #ffffff;
+    font-family: Roboto, Helvetica, sans-serif;
+  padding: 24px 0;
+}
+
+.organisation {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.service-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Introduction */
+
+.intro {
+  max-width: 760px;
+  padding-top: 56px;
+  padding-bottom: 32px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 48px;
+}
+
+.lead {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* Roadmap navigation */
+
+.roadmap-nav {
+  display: flex;
+  gap: 12px;
+  padding: 0 0 48px;
+}
+
+.roadmap-nav a {
+  display: inline-block;
+  padding: 10px 18px;
+  color: #1a365d;
+  background: #ffffff;
+  border: 2px solid #1a365d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.roadmap-nav a:hover {
+  color: #ffffff;
+  background: #1a365d;
+}
+
+.roadmap-nav a:focus {
+  outline: 4px solid #ffeb3b;
+  outline-offset: 2px;
+  color: #212b32;
+  background: #ffeb3b;
+}
+
+/* Sections */
+
+.roadmap-section {
+  padding-bottom: 64px;
+}
+
+.section-heading {
+  border-top: 5px solid #1a365d;
+  padding-top: 20px;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin: 0 0 6px;
+  font-size: 36px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #425563;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #d8dde0;
+  border-top: 5px solid #1a365d;
+  background: #ffffff;
+}
+
+.card h3 {
+  margin: 8px 0 12px;
+  font-size: 24px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 8px;
+  background: #e8edee;
+  color: #212b32;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 32px;
+  padding: 32px 0;
+  color: #ffffff;
+  background: #425563;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .intro {
+    padding-top: 36px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .lead {
+    font-size: 21px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-nav {
+    flex-wrap: wrap;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+}
