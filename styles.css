@@ -42,17 +42,15 @@ body {
 
 .brand img {
   display: block;
-  width: 330px;
+  width: 300px;
   height: auto;
 }
 
 .service-name {
   margin: 0;
   padding-left: 32px;
-  border-left: 1px solid #ffffff;
-
   color: #ffffff;
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.2;
   font-weight: 400;
 }
